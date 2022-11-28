@@ -1,0 +1,195 @@
+/* all */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+li,ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+    h1 {
+    color : cornflowerblue;
+}
+
+.clicked {
+    color : blueviolet;
+}
+
+.largefont{
+    font-size: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* clock */
+.clock {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 10% 0 0 0;
+    font-size: 60px;
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.clockHour, .clockMin, .clockSec{
+    display: inline-block;
+    width: 76px;
+}
+
+.clockDivider{
+    width: 12px;
+}
+
+/* quote */
+
+.quoteContainer{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    margin: 0 0 2%;
+    color: white;
+    font-family: 'Kalam', cursive;
+    text-shadow: 1px 1px 3px black;
+}
+
+/* login & greeting */
+
+.loginContainer {
+    text-align: center;
+    margin: 280px 0 0 0;
+}
+
+.loginContainer input{
+    background-color: #00000096;
+    border: 1.5px solid #000000d4;
+    border-radius: 6px;
+    width: 312px;
+    height: 53px;
+    font-size: 18px;
+    padding: 0px 10px 0px 10px;
+}
+
+.loginContainer input:focus{
+    outline: none;
+    color: white;
+}
+
+.loginContainer input::placeholder{
+    color: white;
+    /* text-align: center; */
+}
+
+.greeting{
+    text-align: center;
+    color: white;
+    font-size: 21px;
+    margin: 10px 0;
+    font-family: 'Gowun Batang', serif;
+}
+
+/* todo */
+.todoContainer {
+    text-align: center;
+}
+
+#todoForm input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #494949;
+    width: 312px;
+    height: 40px;
+    font-size: 18px;
+    padding: 0px 10px 0px 10px;
+    margin: 22px 0 25px 0;
+    font-family: 'Gowun Batang', serif;
+}
+
+#todoForm input::placeholder{
+    text-align: center;
+}
+
+#todoForm input:focus {
+    outline: none;
+    color: white;
+}
+
+.todoContent{
+    display: inline-block;
+    width: 300px;
+    height: 25px;
+    margin-bottom: 5px;
+    border-radius: 6px;
+    font-family: 'Gowun Batang', serif;
+    font-size: 17px;
+    text-shadow: 1px 1px 3px black;
+    word-break: break-word;
+}
+
+.todoBtn{
+    width: 15px;
+    height: 25px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+    margin-left: 4px;
+}
+
+#todoList {
+    display: inline-block;
+    width: 400px;
+    height: 216px;
+    overflow: auto;
+}
+
+.todoItem{
+    padding-left: 0px;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    padding: 0.2rem;
+}
+
+.checkedTodo{
+    text-decoration-line: line-through;
+    color: #2e2e2e;
+    text-shadow: none;
+}
+
+.greyText {
+    color: #2e2e2e;
+    text-shadow: none;
+}
+
+.listHidden {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+.placeholder {
+    display: none;
+    background: #303742;
+    pointer-events: none;
+}
+
+#todoList::-webkit-scrollbar {
+    width: 12px;
+}
+
+#todoList::-webkit-scrollbar-track {
+    background: #cacaca78;
+    border-radius: 10px;
+}
+
+#todoList::-webkit-scrollbar-thumb {
+    background-color: #1f1f1fed;
+    border-radius: 10px;
+    border: 0px solid #00000000;
+}
